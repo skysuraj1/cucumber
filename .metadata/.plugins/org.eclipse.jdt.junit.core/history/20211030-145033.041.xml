@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner (1)" project="Cumcumber" tests="10" started="10" failures="2" errors="0" ignored="0">
+  <testsuite name="runners.LoginRunner" time="23.608">
+    <testsuite name="Feature: Techfios ivalid login functionality validation" time="10.46">
+      <testsuite name="Scenario: User should be able to not login with valid credentials" time="10.46" incomplete="true">
+        <failure>
+          <expected>Dashboard- iBilling</expected>
+          <actual>Login - iBilling</actual>
+          junit.framework.ComparisonFailure: expected:&lt;[Dashboard]- iBilling&gt; but was:&lt;[Login ]- iBilling&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at steps.LoginStepDefination.user_should_land_on_dashboard_page(LoginStepDefination.java:45)&#13;
+	at ✽.Then User should land on dashboard page(features/OtherLogin.feature:10)&#13;
+&#13;
+
+        </failure>
+        <testcase name="Given User is on Techfios login page" classname="Scenario: User should be able to not login with valid credentials" time="0.0"/>
+        <testcase name="When User enters username as &quot;demo1@techfios.com&quot;" classname="Scenario: User should be able to not login with valid credentials" time="0.0"/>
+        <testcase name="When User enters password as &quot;abc123&quot;" classname="Scenario: User should be able to not login with valid credentials" time="0.0"/>
+        <testcase name="And USer clicks on SignIn button" classname="Scenario: User should be able to not login with valid credentials" time="0.0"/>
+        <testcase name="Then User should land on dashboard page" classname="Scenario: User should be able to not login with valid credentials" time="0.013">
+          <failure>
+            <expected>Dashboard- iBilling</expected>
+            <actual>Login - iBilling</actual>
+            junit.framework.ComparisonFailure: expected:&lt;[Dashboard]- iBilling&gt; but was:&lt;[Login ]- iBilling&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at steps.LoginStepDefination.user_should_land_on_dashboard_page(LoginStepDefination.java:45)&#13;
+	at ✽.Then User should land on dashboard page(features/OtherLogin.feature:10)&#13;
+&#13;
+
+          </failure>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature: Techfios login functionality validation" time="10.762">
+      <testsuite name="Scenario: User should be able to login with valid credentials" time="10.762">
+        <testcase name="Given User is on Techfios login page" classname="Scenario: User should be able to login with valid credentials" time="0.0"/>
+        <testcase name="When User enters username as &quot;demo@techfios.com&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0"/>
+        <testcase name="When User enters password as &quot;abc123&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0"/>
+        <testcase name="And USer clicks on SignIn button" classname="Scenario: User should be able to login with valid credentials" time="0.0"/>
+        <testcase name="Then User should land on dashboard page" classname="Scenario: User should be able to login with valid credentials" time="0.0"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

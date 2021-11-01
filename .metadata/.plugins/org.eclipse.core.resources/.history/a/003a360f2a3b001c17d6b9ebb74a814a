@@ -1,0 +1,63 @@
+package steps;
+
+import org.openqa.selenium.support.PageFactory;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import junit.framework.Assert;
+import pages.LoginPage;
+import pages.TestBase;
+
+
+public class LoginStepDefination extends TestBase {
+	LoginPage loginpage;
+	
+	@Before
+	public void beforeRun() {
+		initDriver();
+		loginpage = PageFactory.initElements(driver, LoginPage.class);
+	}
+	@Given ("^User is on Techfios login page$")
+	public void User_is_on_Techfios_login_page() {
+		
+	 loginpage = PageFactory.initElements(driver, LoginPage.class);
+		
+	}
+	
+
+@When("^User enters username as \"([^\"]*)\"$")
+public void user_enters_username_as(String userName) throws Throwable {
+  loginpage.insertUserName(userName);
+  Thread.sleep(3000);
+}
+
+@When("^User enters password as \"([^\"]*)\"$")
+public void user_enters_password_as(String password) throws Throwable {
+    loginpage.insertPassword(password);
+    Thread.sleep(3000);
+}
+
+@And("^USer clicks on SignIn button$")
+public void user_clicks_on_SignIn_button() throws Throwable {
+    loginpage.clickSigninButton();
+    Thread.sleep(3000);
+}
+
+@Then("^User should land on dashboard page$")
+public void user_should_land_on_dashboard_page() throws Throwable {
+	String dashboardPageTitle = driver.getTitle();
+	Assert.assertEquals("Dashboard- iBilling", dashboardPageTitle);
+  //  System.out.println("User landed on Dashboard Page");
+	takeScreenshot(driver);
+}
+
+public void tearDown(){
+	driver.quit();
+	driver.close();
+}
+	
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner (1)" project="Cumcumber" tests="5" started="5" failures="0" errors="0" ignored="5">
+  <testsuite name="runners.LoginRunner" time="0.005">
+    <testsuite name="Feature: Techfios other login functionality validation driving the data from mysql database" time="0.005">
+      <testsuite name="Scenario: User should be able to login with valid credentials" time="0.005" incomplete="true">
+        <skipped/>
+        <testcase name="Given User in on Techfiod login page" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="When User enters &quot;username&quot; from mysql database" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="When User enters &quot;password&quot; from mysql database" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And USer clicks on SignIn button" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="Then User should land on dashboard page" classname="Scenario: User should be able to login with valid credentials" time="0.001" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

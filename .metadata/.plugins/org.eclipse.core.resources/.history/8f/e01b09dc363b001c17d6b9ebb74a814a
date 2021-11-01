@@ -1,0 +1,9 @@
+package pages;
+
+public class DatabasePage {
+
+	public void getData() {
+		
+	}
+	
+}

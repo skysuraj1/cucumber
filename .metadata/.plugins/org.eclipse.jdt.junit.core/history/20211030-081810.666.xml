@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner (1)" project="Cumcumber" tests="5" started="5" failures="0" errors="2" ignored="4">
+  <testsuite name="runners.LoginRunner" time="0.017">
+    <testsuite name="Feature: Techfios login functionality validation" time="0.017">
+      <testsuite name="Scenario: User should be able to login with valid credentials" time="0.008" incomplete="true">
+        <error>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.011
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-GEPHIER', ip: '192.168.1.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\skysuraj\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50121}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f0ccf8ebc920b772153b38ee6784bbaf&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)&#13;
+	at pages.TestBase.initDriver(TestBase.java:19)&#13;
+	at steps.LoginStepDefination.User_is_on_Techfios_login_page(LoginStepDefination.java:16)&#13;
+	at ✽.Given User is on Techfios login page(features/TF_Login.feature:6)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on Techfios login page" classname="Scenario: User should be able to login with valid credentials" time="0.007">
+          <error>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.011
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-GEPHIER', ip: '192.168.1.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\skysuraj\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50121}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f0ccf8ebc920b772153b38ee6784bbaf&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)&#13;
+	at pages.TestBase.initDriver(TestBase.java:19)&#13;
+	at steps.LoginStepDefination.User_is_on_Techfios_login_page(LoginStepDefination.java:16)&#13;
+	at ✽.Given User is on Techfios login page(features/TF_Login.feature:6)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When User enters username as &quot;demo@techfios.com&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="When User enters password as &quot;abc123&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And USer clicks on SignIn button" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="Then User should land on dashboard page" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

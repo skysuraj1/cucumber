@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner (1)" project="Cumcumber" tests="5" started="5" failures="0" errors="2" ignored="4">
+  <testsuite name="runners.LoginRunner" time="0.012">
+    <testsuite name="Feature: Techfios login functionality validation" time="0.012">
+      <testsuite name="Scenario: User should be able to login with valid credentials" time="0.005" incomplete="true">
+        <error>java.lang.IllegalStateException: The driver executable does not exist: D:\driver\chromedriver&#13;
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at pages.TestBase.initDriver(TestBase.java:14)&#13;
+	at steps.LoginStepDefination.User_is_on_Techfios_login_page(LoginStepDefination.java:16)&#13;
+	at ✽.Given User is on Techfios login page(features/TF_Login.feature:6)&#13;
+&#13;
+</error>
+        <testcase name="Given User is on Techfios login page" classname="Scenario: User should be able to login with valid credentials" time="0.005">
+          <error>java.lang.IllegalStateException: The driver executable does not exist: D:\driver\chromedriver&#13;
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at pages.TestBase.initDriver(TestBase.java:14)&#13;
+	at steps.LoginStepDefination.User_is_on_Techfios_login_page(LoginStepDefination.java:16)&#13;
+	at ✽.Given User is on Techfios login page(features/TF_Login.feature:6)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When User enters username as &quot;demo@techfios.com&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="When User enters password as &quot;abc123&quot;" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="And USer clicks on SignIn button" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+        <testcase name="Then User should land on dashboard page" classname="Scenario: User should be able to login with valid credentials" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

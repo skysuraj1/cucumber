@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner (1)" project="Cumcumber" tests="15" started="15" failures="2" errors="2" ignored="1">
+  <testsuite name="runners.LoginRunner" time="44.505">
+    <testsuite name="Feature: Techfios login functionality validation" time="44.505">
+      <testsuite name="Scenario Outline: User should be able to login with valid credentials" time="44.505">
+        <testsuite name="Examples:" time="44.505">
+          <testsuite name="| demo1@techfios.com | abc123 |" time="10.547" incomplete="true">
+            <failure>
+              <expected>Dashboard- iBilling</expected>
+              <actual>Login - iBilling</actual>
+              junit.framework.ComparisonFailure: expected:&lt;[Dashboard]- iBilling&gt; but was:&lt;[Login ]- iBilling&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at steps.LoginStepDefination.user_should_land_on_dashboard_page(LoginStepDefination.java:53)&#13;
+	at ✽.Then User should land on dashboard page(features/TF_Login.feature:11)&#13;
+&#13;
+
+            </failure>
+            <testcase name="Given User is on Techfios login page" classname="| demo1@techfios.com | abc123 |" time="0.001"/>
+            <testcase name="When User enters username as &quot;demo1@techfios.com&quot;" classname="| demo1@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="When User enters password as &quot;abc123&quot;" classname="| demo1@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="And USer clicks on SignIn button" classname="| demo1@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="Then User should land on dashboard page" classname="| demo1@techfios.com | abc123 |" time="0.014">
+              <failure>
+                <expected>Dashboard- iBilling</expected>
+                <actual>Login - iBilling</actual>
+                junit.framework.ComparisonFailure: expected:&lt;[Dashboard]- iBilling&gt; but was:&lt;[Login ]- iBilling&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at steps.LoginStepDefination.user_should_land_on_dashboard_page(LoginStepDefination.java:53)&#13;
+	at ✽.Then User should land on dashboard page(features/TF_Login.feature:11)&#13;
+&#13;
+
+              </failure>
+            </testcase>
+          </testsuite>
+          <testsuite name="| demo@techfios.com | abc123 |" time="10.791">
+            <testcase name="Given User is on Techfios login page" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="When User enters username as &quot;demo@techfios.com&quot;" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="When User enters password as &quot;abc123&quot;" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="And USer clicks on SignIn button" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="Then User should land on dashboard page" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| demo1@techfios.com | abc123 |" time="18.436" incomplete="true">
+            <error>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-GEPHIER', ip: '192.168.1.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\skysuraj\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8283ed7ea248ec4d6b09c7b1b0a106a4
+*** Element info: {Using=xpath, value=/html/body/div/div/div/form/div[3]/button}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy18.click(Unknown Source)&#13;
+	at pages.LoginPage.clickSigninButton(LoginPage.java:44)&#13;
+	at steps.LoginStepDefination.user_clicks_on_SignIn_button(LoginStepDefination.java:46)&#13;
+	at ✽.And USer clicks on SignIn button(features/TF_Login.feature:10)&#13;
+&#13;
+</error>
+            <testcase name="Given User is on Techfios login page" classname="| demo1@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="When User enters username as &quot;demo1@techfios.com&quot;" classname="| demo1@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="When User enters password as &quot;abc123&quot;" classname="| demo1@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="And USer clicks on SignIn button" classname="| demo1@techfios.com | abc123 |" time="0.002">
+              <error>org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=95.0.4638.69)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-GEPHIER', ip: '192.168.1.92', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: C:\Users\skysuraj\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8283ed7ea248ec4d6b09c7b1b0a106a4
+*** Element info: {Using=xpath, value=/html/body/div/div/div/form/div[3]/button}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)&#13;
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy18.click(Unknown Source)&#13;
+	at pages.LoginPage.clickSigninButton(LoginPage.java:44)&#13;
+	at steps.LoginStepDefination.user_clicks_on_SignIn_button(LoginStepDefination.java:46)&#13;
+	at ✽.And USer clicks on SignIn button(features/TF_Login.feature:10)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="Then User should land on dashboard page" classname="| demo1@techfios.com | abc123 |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

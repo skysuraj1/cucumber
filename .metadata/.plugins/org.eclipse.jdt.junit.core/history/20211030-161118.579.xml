@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoginRunner (1)" project="Cumcumber" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="runners.LoginRunner" time="10.981">
+    <testsuite name="Feature: Techfios login functionality validation" time="10.981">
+      <testsuite name="Scenario Outline: User should be able to login with valid credentials" time="10.981">
+        <testsuite name="Examples:" time="10.981">
+          <testsuite name="| demo@techfios.com | abc123 |" time="10.981">
+            <testcase name="Given User is on Techfios login page" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="When User enters username as &quot;demo@techfios.com&quot;" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="When User enters password as &quot;abc123&quot;" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="And USer clicks on SignIn button" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+            <testcase name="Then User should land on dashboard page" classname="| demo@techfios.com | abc123 |" time="0.0"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

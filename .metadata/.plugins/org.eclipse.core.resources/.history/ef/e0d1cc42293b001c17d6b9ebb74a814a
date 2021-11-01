@@ -1,0 +1,13 @@
+Feature: Techfios other login functionality validation driving the data from mysql database
+
+Background:
+
+Given User in on Techfiod login page
+
+Scenario: User should be able to login with valid credentials
+
+When User enters username as "demo@techfios.com"
+	When User enters password as "abc123"
+	And USer clicks on SignIn button  
+	Then User should land on dashboard page
+	
